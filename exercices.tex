@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage[none]{hyphenat}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{exercise}
+\usepackage[letterpaper, portrait, top=1in, left=1in, right=1in, bottom=1in, includefoot]{geometry}
+
+\begin{document}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}   %% centered
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}m{#1}}  %% right aligned
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}m{#1}}  %% left aligned
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\setlength\LTcapwidth{\textwidth}
+\setlength{\abovedisplayskip}{0.1pt}
+\setlength{\belowdisplayskip}{0.1pt}
+\renewcommand{\arraystretch}{1.2}
+\newdimen\NetTableWidth
+
+\title{Transport collectif • Définitions et symboles}
+
+\author{Pierre-Léo Bourbonnais et étudiants du cours CIV6708}
+
+\section*{Exercices}
+
+\begin{Exercise}[name=Exercice, origin={Vukan R. Vuchic}]
+    Une ligne de bus a une distance inter-arrêt fixe de 250m. La vitesse programmée (vitesse de croisière du bus entre les arrêts) est de 36 km/h. Le temps d'arrêt est de 20 secondes. Les passagers sont uniformément distribués sur le parcours de la ligne et marchent à 5 km/h. On décide de retirer des arrêts pour obtenir une distance inter-arrêts de 500 m. Quel sera le changement de temps de parcours total moyen par passager si la distance moyenne parcourue par passager sur la ligne est de a) 4 km, b) 6 km, c) 8 km, d) 10 km ?
+    
+    \textit{A bus line has stops 250 m apart. Programmed speed (cruising speed between stops) is 36 km/h. Stop time is 20 seconds. Passengers are uniformly distributed along the line and their walking speed is 5 km/h. We decide to reduce the number of stops to get a distance of 500 m between stops. How would a passenger total travel time change if the average distance traveled on line is a) 4 km, b) 6 km, c) 8 km, d) 10 km ?}
+\end{Exercise}
+
+%%\begin{Exercise}[name=Exercice, origin={Vukan R. Vuchic}]
+%%    Une ligne de bus a une lngueur de 12 km. Cette ligne possède un arrêt à chaque intersection de blocs et il y a 5 blocs par km. La vitesse du moyenne du trafic est de 34 km/h. Le temps de battement est de 9 minutes à chaque extrémité. Prendre pour acquis que les bus arrêtent à chaque arrêt pendant 20 secondes (incluant 15 sec. d'arrêt et 5 sec. d'accélération/freinage) ? On veut réduire la densité d'arrêts à un arrêt par deux intersections. Le temps d'arrêt augmentera à 25 sec. incluant accélération et décélération de 5 sec. 
+    
+%%    \textit{A bus line has stops 250 m apart. Programmed speed (cruising speed between stops) is 36 km/h. Stop time is 20 seconds. Passengers are uniformly distributed along the line and their walking speed is 5 km/h. We decide to reduce the number of stops to get a distance of 500 m between stops. How would a passenger total travel time change if the average distance traveled on line is a) 4 km, b) 6 km, c) 8 km, d) 10 km ?}
+%%\end{Exercise}
+
+\noindent
+  \NetTableWidth=\dimexpr
+    \linewidth
+    - 8\tabcolsep
+    - 5\arrayrulewidth % if package array is loaded
+  \relax
+
+\end{document}
+
